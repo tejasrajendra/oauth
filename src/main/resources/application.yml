@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 622896832821-kb4q5bv6th18cp6nle42f4jvrs9jmq0m.apps.googleusercontent.com
+            client-secret: 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
+            scope: openid,profile,email
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
